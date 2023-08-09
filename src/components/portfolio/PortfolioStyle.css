@@ -1,0 +1,281 @@
+.portfolio {
+  background-image: url("./portfolio-bg.png");
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+}
+
+#small {
+  display: none;
+}
+.portfolio-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  text-align: center;
+  color: #fd7a60;
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
+}
+
+.portfolio-section {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+.down {
+  margin-bottom: 150px;
+}
+
+.portfolio-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.normal-wrap {
+  flex-wrap: wrap;
+}
+
+.reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.portfolio-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 70px;
+  color: #e24273;
+  text-shadow: -1px -1px 0px #6b6bce, 3px 3px 0px #6b6bce, 6px 6px 0px #6b6bce;
+}
+
+.portfolio-desc {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 30px;
+  width: 572px;
+  margin-top: 30px;
+}
+.portfolio-img img {
+  width: 100%;
+  height: auto;
+}
+
+.made-with {
+  margin-top: 80px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.made-with-hci {
+  margin-top: 50px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.external-link {
+  margin-top: 10px;
+}
+
+.external-link a {
+  margin-right: 10px;
+}
+
+.external-link img {
+  width: 34px;
+  height: 34px;
+}
+
+.hci {
+  width: 601px;
+}
+
+.luna {
+  padding-right: 5px;
+}
+
+.port-container {
+  margin: 0 100px;
+}
+
+.mob {
+  display: none;
+}
+
+@media only screen and (max-width: 1712px) {
+  .portfolio {
+    background-image: url("./portfolio-bg-mid.png");
+    width: 100%;
+    height: auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .portfolio-name {
+    text-align: center;
+  }
+  .portfolio-content {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio-section {
+    margin-bottom: 0;
+  }
+  .portfolio-name {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .down {
+    margin-bottom: 160px;
+  }
+  .portfolio-desc {
+    width: inherit;
+  }
+  .luna {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .portfolio-desc {
+    font-size: 1.9vw;
+  }
+  .made-with,
+  .made-with-hci {
+    font-size: 1.75vw;
+  }
+  /* .portfolio-words {
+    width: 100%;
+    height: auto;
+  }
+  .portfolio-desc {
+    width: inherit;
+  }
+  .portfolio-name {
+    width: inherit;
+  } */
+  .external-link img {
+    width: 17px;
+    height: 17px;
+  }
+  .portfolio-words {
+    margin: 0;
+  }
+
+  .portfolio-name {
+    margin-bottom: 30px;
+  }
+
+  /* .hci {
+    width: 500px;
+  } */
+  .made-with {
+    margin-top: 40px;
+  }
+  .made-with-hci {
+    margin-top: 40px;
+  }
+  .down {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  /* .portfolio-name {
+    font-size: 6vw;
+  }
+
+  .portfolio-header {
+    font-size: 9vw;
+  } */
+
+  .portfolio {
+    padding-top: 40px;
+  }
+  .portfolio {
+    background-image: url("./portfolio-bg-mobile.png");
+  }
+
+  .port-container {
+    margin: 0;
+    margin: 0 60px;
+  }
+  .made-with {
+    margin-top: 30px;
+  }
+  .made-with-hci {
+    margin-top: 30px;
+  }
+  .portfolio-desc {
+    margin-top: 0;
+  }
+  .portfolio-name {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .portfolio-content {
+    display: initial;
+  }
+  .port-container {
+    margin: 0;
+    margin: 0 40px;
+  }
+  .portfolio-name {
+    font-size: 9vw;
+  }
+  .portfolio-header {
+    font-size: 12vw;
+  }
+  .portfolio-name {
+    margin-bottom: 20px;
+  }
+  .portfolio-section {
+    margin-top: 30px;
+  }
+  .hci {
+    width: inherit;
+  }
+  .portfolio-desc {
+    line-height: 18px;
+  }
+  .init {
+    display: none;
+  }
+  .mob {
+    display: inline-block;
+  }
+  .portfolio {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .external-link img {
+    width: 12px;
+    height: 12px;
+  }
+  .external-link a {
+    margin-right: 5px;
+  }
+  .external-link {
+    margin-top: 5px;
+  }
+}
